@@ -35,7 +35,7 @@ public class Pessoa implements Serializable{
 		
 	}
 
-	public Pessoa(Long id_pessoa, String cpf, String nome, String telefone, String email, Date dt_nascimento) {
+	public Pessoa(Long id_pessoa, String cpf, String nome, String telefone, String email, Date dt_nascimento, Setor setor) {
 		super();
 		this.id_pessoa = id_pessoa;
 		this.cpf = cpf;
@@ -43,6 +43,7 @@ public class Pessoa implements Serializable{
 		this.telefone = telefone;
 		this.email = email;
 		this.dt_nascimento = dt_nascimento;
+		this.setor = setor;
 	}
 
 	public Long getId_pessoa() {
